@@ -31,7 +31,7 @@ To do this, start by generating the host keys locally:
 
 Then create a `Secret` from them:
 
-    create secret generic ssh-host-keys --from-file=ssh_host_ecdsa_key --from-file=ssh_host_ed25519_key --from-file=ssh_host_rsa_key
+    kubectl create secret generic ssh-host-keys --from-file=ssh_host_ecdsa_key --from-file=ssh_host_ed25519_key --from-file=ssh_host_rsa_key
 
 Finally, mount the secret as a volume in the pod to `/etc/ssh` (a complete example is below)
 
