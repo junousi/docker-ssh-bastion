@@ -22,7 +22,7 @@ To avoid this, you have three choices:
 2. (not recommended) `UserKnownHostsFile /dev/null` in your `.ssh/config` or as a flag when connecting
 3. (really not recommended) Delete the relevant line from your `.ssh/known_hosts` any time this happens
 
-Option 3 is a bit more work, but a) still fairly easy and b) provides the best experience.
+Option 1 is a bit more work, but a) still fairly easy and b) provides the best experience.
 To do this, start by generating the host keys locally:
 
     ssh-keygen -f ssh_host_ecdsa_key -N '' -t ecdsa
